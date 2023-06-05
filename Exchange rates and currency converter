@@ -71,14 +71,14 @@ def get_currency_data():
         return None, None
 
 
-def currency_converter(currency_data):                                 #конвертер валют
+def currency_converter(currency_data):                                    #конвертер валют
     currencies = currency_data['Valute']
     currencies['RUB'] = {'Name': 'Российский рубль', 'Value': 1.0, 'Nominal': 1}
 
     def convert():
-        currency_input_1 = currency_combobox_1.get()
-        currency_input_2 = currency_combobox_2.get()
-        amount = float(amount_entry.get())
+        currency_input_1 = currency_combobox_1.get()                      #выбирается валюта из списка, из которой переводятся средства
+        currency_input_2 = currency_combobox_2.get()                      #выбирается вторая из списка, в которую переводятся средства
+        amount = float(amount_entry.get())                                #сумма средства в первой валюте
         if amount < 0:
             result_label.config(text="Ошибка: Сумма должна быть положительна.")
         else:
