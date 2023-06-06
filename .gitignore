@@ -1,0 +1,35 @@
+# Ignore Python byte-code files
+*.pyc
+
+# Ignore Python virtual environment folder
+venv/
+
+# Ignore files and folders created by IDE
+.idea/
+.vscode/
+
+# Ignore compiled files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore log files
+*.log
+
+# Ignore settings files
+*.ini
+*.cfg
+
+# Ignore data files
+*.db
+*.sqlite
+*.sql
+
+# Ignore secret key and password files
+*.key
+*.pem
+*.password
+
+# Ignore files and folders containing sensitive information
+confidential/
