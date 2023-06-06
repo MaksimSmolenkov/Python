@@ -9,3 +9,4 @@
 
 Данные валют берутся с публичного api - "https://www.cbr-xml-daily.ru/daily_json.js"
 Данные металловберутся с публичного api - "https://api.metals.live/v1/spot"
+
